@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior:smooth ;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+h1{
+    font-size: 70px;
+}
+h2{
+    font-size: 59px;
+    color: #121933;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 42px;
+    color: #121933;
+    text-transform: uppercase;
+}
+h5{
+    font-size: 18px;
+    font-weight: 599;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    color: #7f8183;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+ul li{
+    list-style: none;
+}
+/*======================================*/
+
+
+/*======================HEADER SECTION START=====================*/
+#header{
+    position: relative;
+}
+.logo{
+    cursor: pointer;
+}
+.header-top{
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    z-index: 999;
+    position: absolute;
+    overflow: hidden;
+    
+}
+.headcount{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    position: relative;
+    padding-left: 40px;
+    color: #fff;
+    padding-right: 30px;
+
+}
+.headcount a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+.headcount img{
+    position: absolute;
+    left: 0;
+    top:5px;
+}
+/*==============================NAVBAR START=======================*/
+.navbar{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 90px;
+}
+.navbar-top{
+    transition: 0.2a;
+}
+.nav-wrapper{
+    width: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: relative;
+}
+.navbar-brand{
+    display: none;
+}
+.navbar-toggler{
+    outline: none;
+    border: none;
+    background: rgba(109, 102, 102, 0.589);
+    margin-left: auto !important;
+    display: block;
+}
+/* #header .navbar-light .navbar-toggler-icon{
+    background-image: url(svg/humburgger.svg);
+} */
+.navbar-light .navbar-nav .active > .nav-link{
+    color: #1fc058;
+    margin-left:30px ;
+    /* text-align: center; */
+}
+.navbar-light .navbar-nav .nav-link{
+    font-family: 'Poppins', sans-serif;
+    color: #121933;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding:25px 20px ;
+}
+/*==============================NAVBAR END=======================*/
+
+.my-btn a{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    background: #1fc058;
+    color: #fff !important;
+    z-index: 1;
+    padding: 24px 57px;
+    text-transform: uppercase;
+    font-weight: 599;
+    display: block;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.my-btn a::before{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 100%;
+    background: #1fc058;
+    position: absolute;
+    left: -13px;
+    top: 0px;
+    transform: skew(-19deg);
+    z-index: -1;
+    transition: 0.3s;
+}
+.my-btn a:hover{
+    color: #000c38 !important;
+    background: #1fc058;
+}
+.my-btn a:hover::before{
+    background: #1fc058;
+}
+.fixed-me{
+    width: 100%;
+    background: #ffffff;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    border-bottom: 1px solid #1333;
+    transition: all 0.3s;
+}
+/*=================BANNER SECTION START==============*/
+.banner{
+    background: #121933;
+    /* background-image:url(img/banner-bg.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 365px;
+}
+.hero-text{
+    margin-top: 370px;
+    text-align: center;
+    color: #fff;
+
+}
+.hero-text h4{
+    color: #fff;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+
+}
+.hero-text h4 span{
+    color: #1fc058;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.hero-text h1{
+    padding-bottom: 15px;
+    text-transform: uppercase;
+
+}
+.hero-text p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 59px;
+}
+.hero-btn{
+    background: #1fc058;
+    font-size: 18px;
+    color: #fff;
+    font-weight:599 ;
+    padding: 15px 45px;
+    margin: 8px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.hero-btn:hover{
+    text-align: none;
+   color: #fff;
+}
+.btn1{
+    background: #fff;
+    color:#000c38 ;
+}
+.btn1:hover{
+    background: #1fc058;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+/*=================BANNER SECTION END==============*/
+
+
+/*======================SERVICES SECTION START================*/
+#block{
+    padding-bottom: 30px;
+    display: block;
+}
+.block-one{
+    background: #f7f7f7;
+    padding: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: -125px;
+    overflow: hidden;
+}
+.block .fa{
+    color: #333 !important;
+}
+.block-one h4{
+   text-transform: uppercase;
+   color: #121933;
+   padding-top: 22px;
+   padding-bottom: 10px;
+}
+.block-one p{
+    padding-bottom: 10px;
+}
+.block-one:hover{
+    background: #1fc058;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+.block-one:hover p{
+    color: #fff;
+    transition: 0.5s ease-in-out ;
+}
+.block-one:hover h4{
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+/*======================SERVICES SECTION END================*/
+
+/*========================TESTIMONIAL SECTION START===============*/
+#testimonial{
+    padding-top: 59px;
+    padding-bottom: 0px;
+}
+.testimonial-title{
+    padding-bottom:59px ;
+}
+.client{
+    border: 1px solid #e1e1e1;
+    padding: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+}
+.client img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+}
+.client-inform{
+    padding-top: 15px;
+    padding-left: 35px;
+}
+.client-inform h4{
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: capitalize;
+}
+.client-inform span{
+    font-size: 15px;
+    color: rgb(236, 57, 29);
+}
+.client::after{
+    content: '';
+    display: block;
+    border-top: 3px solid #ef1414;
+    width: 180px;
+    position: absolute;
+    top: 0;
+    left: 30px ;
+}
+/*========================TESTIMONIAL SECTION END===============*/
+ 
+/*========================BLOG SECTION START===============*/
+
+#blog{
+    padding-top: 140px;
+    padding-bottom: 70px;
+}
+.fix-blog{
+    border: 1px solid #e0e3e7;
+    padding: 25px;
+}
+.blog-title h3{
+    padding-bottom: 59px;
+}
+.blog-content{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.blog-content a{
+    font-weight: 400;
+    color: #7f8183;
+    font-size: 14px;
+    text-decoration: none;
+}
+.blog-content a i{
+    color: #ef1414;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.blog-content a i:hover{
+    text-decoration: none;
+}
+.blog-content a:hover{
+    text-decoration: none;
+    color: #ef1414;
+}
+.blog-photo .read-btn{
+    font-size: 18px;
+    font-weight: 500;
+    color: #ef1414;
+    text-transform: uppercase;
+    margin-top: 25px;
+    display: block;
+    padding-bottom: 10px;
+    position: relative;
+    text-decoration: none;
+}
+.blog-photo .read-btn::after{
+    content: '';
+    display: block;
+    border-bottom: 3px solid #ef1414;
+    position: absolute;
+    width: 40px;
+    top: 13px;
+    left: 110px;
+}
+.blog-photo .read-btn:hover{
+    color: #000c38;
+    transition:  0.3s ease-in-out;
+}
+/*========================BLOG SECTION END===============*/
+
+/*========================COMMIT SECTION START===============*/
+
+#commit{
+    background: #1fc058;
+    padding-top: 70px;
+
+}
+.commit-title h3{
+    color: #fff;
+
+}
+.commit-title p{
+    color: #fff;
+    padding-top: 8px;
+    padding-bottom: 50px;
+}
+.inform p{
+    color: #fff;
+    line-height: 0;
+    padding-top: 18px;
+    padding-bottom: 5px;
+}
+.contact-btn{
+    background: #fff !important;
+    color: #121933;
+    padding: 15px 50px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: right;
+    display: inline-block;
+}
+.inform a{
+    text-decoration: none;
+}
+.contact-btn:hover{
+    text-decoration: none !important;
+    background: #121933 !important;
+    color: #ef1414 !important;
+    transition-timing-function: 0.5s;
+}
+/*========================COMMIT SECTION END===============*/
+
+
+/*========================CONTACT SECTION START===============*/
+
+#contact{
+    background:#01040f;
+    padding-top: 128px;
+    padding-bottom: 108px;
+}
+.logo-detail p{
+    padding-top: 45px;
+}
+.service-link h4{
+    color: #fff;
+    padding-bottom: 20px; 
+}
+.service-link a{
+    text-decoration: none;
+}
+.service-link ul li a{
+    font-weight: 400;
+    font-size: 15px;
+    color: #7f8183;
+    padding: 5px 0px;
+    display:block;
+    transition: 0.3s;
+}
+#service-link ul li a:hover{
+    color: #ef1414;
+    padding-left: 5px  ;
+}
+
+/*========================CONTACT SECTION END===============*/
+
+/*========================FOOTER SECTION START===============*/
+
+#footer{
+    background: #090b12;
+    padding-top: 22px;
+    padding-bottom: 12px;
+}
+.footer-content a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #ef1414;
+}
+/*========================FOOTER SECTION END===============*/
+
+
+
+
+
+
